@@ -25,7 +25,7 @@ The class allows you to:
 - compress/uncompress IPv6 addresses
 - check for an IPv4 compatible ending in an IPv6 address
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Ta klasa pozwala na:
