@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - Check and validate IPv6 addresses
-Summary(pl):	%{_pearname} - Sprawd¼ poprawno¶æ adresów IPv6
+Summary(pl):	%{_pearname} - Sprawdzanie poprawno¶ci adresów IPv6
 Name:		php-pear-%{_pearname}
 Version:	1.0
 Release:	1
@@ -21,7 +21,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The class allows you to:
-- check if an addresse is an IPv6 address
+- check if an address is an IPv6 address
 - compress/uncompress IPv6 addresses
 - check for an IPv4 compatible ending in an IPv6 address
 
