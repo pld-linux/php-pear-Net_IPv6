@@ -1,11 +1,11 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          Net
-%define         _subclass       IPv6
+%define		_class		Net
+%define		_subclass	IPv6
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 
-Summary:	%{_pearname} - Check and validate IPv6 addresses
-Summary(pl):	%{_pearname} - Sprawdzanie poprawno¶ci adresów IPv6
+Summary:	%{_pearname} - check and validate IPv6 addresses
+Summary(pl):	%{_pearname} - sprawdzanie poprawno¶ci adresów IPv6
 Name:		php-pear-%{_pearname}
 Version:	1.0
 Release:	1
