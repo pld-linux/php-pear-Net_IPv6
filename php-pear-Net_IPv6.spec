@@ -21,9 +21,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The class allows you to:
-- check if an addresse is an IPv6 addresse
+- check if an addresse is an IPv6 address
 - compress/uncompress IPv6 addresses
-- check for an IPv4 compatible ending in an IPv6 adresse
+- check for an IPv4 compatible ending in an IPv6 address
 
 This class has in PEAR status: %{_status}.
 
