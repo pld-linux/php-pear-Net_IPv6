@@ -1,18 +1,18 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Net
 %define		_subclass	IPv6
-%define		_status		stable
+%define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
-
-%define	_rc	RC3
+%define		subver	RC3
+%define		rel	1
 Summary:	%{_pearname} - check and validate IPv6 addresses
 Summary(pl.UTF-8):	%{_pearname} - sprawdzanie poprawności adresów IPv6
 Name:		php-pear-%{_pearname}
 Version:	1.1.0
-Release:	0.%{_rc}.1
+Release:	0.%{subver}.%{rel}
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_rc}.tgz
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{subver}.tgz
 # Source0-md5:	22b5de11eb83e562eee04c2c1561058a
 URL:		http://pear.php.net/package/Net_IPv6/
 BuildRequires:	php-pear-PEAR
