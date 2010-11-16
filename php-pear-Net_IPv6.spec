@@ -1,19 +1,15 @@
 %include	/usr/lib/rpm/macros.php
-%define		_class		Net
-%define		_subclass	IPv6
-%define		_status		beta
-%define		_pearname	%{_class}_%{_subclass}
-%define		subver	b2
-%define		rel	1
+%define		_status		stable
+%define		_pearname	Net_IPv6
 Summary:	%{_pearname} - check and validate IPv6 addresses
 Summary(pl.UTF-8):	%{_pearname} - sprawdzanie poprawności adresów IPv6
 Name:		php-pear-%{_pearname}
 Version:	1.1.0
-Release:	1.%{subver}.%{rel}
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{subver}.tgz
-# Source0-md5:	663d7d645319c0417b59bcefcedad74d
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	796c03b891d1e16c5129efbd314a9c5f
 URL:		http://pear.php.net/package/Net_IPv6/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -41,10 +37,15 @@ Ta klasa ma w PEAR status: %{_status}.
 %prep
 %pear_package_setup
 
+mv .%{php_pear_dir}/Net/Net/IPv6.php .%{php_pear_dir}/Net/IPv6.php
+
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}
 %pear_package_install
+
+# tests should not be packaged
+%{__rm} -r $RPM_BUILD_ROOT%{php_pear_dir}/tests/%{_pearname}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -53,4 +54,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc install.log
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/%{_class}/*.php
+%{php_pear_dir}/Net/IPv6.php
