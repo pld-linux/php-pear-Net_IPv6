@@ -5,7 +5,7 @@ Summary:	%{_pearname} - check and validate IPv6 addresses
 Summary(pl.UTF-8):	%{_pearname} - sprawdzanie poprawności adresów IPv6
 Name:		php-pear-%{_pearname}
 Version:	1.2.1
-Release:	3
+Release:	4
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -37,7 +37,9 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %pear_package_setup
+cd ./%{php_pear_dir}
 %patch0 -p1
+cd -
 
 %install
 rm -rf $RPM_BUILD_ROOT
