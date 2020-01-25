@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_status		stable
 %define		_pearname	Net_IPv6
 Summary:	%{_pearname} - check and validate IPv6 addresses
