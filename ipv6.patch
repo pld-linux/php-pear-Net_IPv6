@@ -1,0 +1,12 @@
+diff -urN Net_IPv6-1.3.0b4.org/Net/IPv6.php Net_IPv6-1.3.0b4/Net/IPv6.php
+--- Net_IPv6-1.3.0b4.org/Net/IPv6.php	2018-07-09 13:55:41.000000000 +0200
++++ Net_IPv6-1.3.0b4/Net/IPv6.php	2024-06-05 09:04:05.726443082 +0200
+@@ -807,7 +807,7 @@
+     public static function isCompressible($ip)
+     {
+ 
+-        return (bool)($ip != Net_IPv6::compress($address));
++        return (bool)($ip != Net_IPv6::compress($ip));
+ 
+     }
+ 
