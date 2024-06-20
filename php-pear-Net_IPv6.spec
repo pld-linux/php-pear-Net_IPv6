@@ -5,7 +5,7 @@ Summary:	%{_pearname} - check and validate IPv6 addresses
 Summary(pl.UTF-8):	%{_pearname} - sprawdzanie poprawności adresów IPv6
 Name:		php-pear-%{_pearname}
 Version:	1.3.0
-Release:	0.%{snap}.1
+Release:	0.%{snap}.2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{snap}.tgz
