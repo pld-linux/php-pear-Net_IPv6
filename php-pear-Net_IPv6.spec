@@ -38,7 +38,7 @@ Ta klasa ma w PEAR status: %{_status}.
 %prep
 %pear_package_setup
 cd ./%{php_pear_dir}
-%patch0 -p1
+%patch -P0 -p1
 cd -
 
 %install
